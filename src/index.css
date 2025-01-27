@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+ 
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+ 
+    --radius: 0.75rem;
+  }
+
+  body {
+    @apply bg-[#f8fafc] text-gray-900 font-opensans;
+  }
+
+  /* Styles spécifiques pour l'e-learning */
+  .course-section {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md;
+  }
+
+  .course-title {
+    @apply text-[28px] font-montserrat font-bold text-gray-900 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent leading-tight tracking-tight;
+  }
+
+  .section-title {
+    @apply text-[18px] font-montserrat font-semibold text-gray-800 border-b border-gray-200/60 pb-2;
+  }
+
+  .subsection-title {
+    @apply text-[16px] font-montserrat font-medium text-gray-800 mb-2;
+  }
+
+  .content-text {
+    @apply text-gray-700 leading-relaxed text-justify whitespace-pre-wrap font-opensans text-[12px];
+  }
+
+  .key-points {
+    @apply bg-gray-50/80 p-4 rounded-lg my-4 border border-gray-100;
+  }
+
+  .key-point-item {
+    @apply flex items-start gap-2 text-gray-700 mb-2;
+  }
+
+  .edit-button {
+    @apply text-blue-600 hover:text-blue-700 transition-colors;
+  }
+
+  .remove-button {
+    @apply text-red-500 hover:text-red-600 transition-colors;
+  }
+
+  /* Styles pour les sections de texte */
+  .text-content-section {
+    @apply bg-gray-50/80 p-6 rounded-lg border border-gray-100;
+  }
+}
